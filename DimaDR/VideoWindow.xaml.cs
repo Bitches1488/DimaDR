@@ -39,5 +39,10 @@ namespace DimaDR
         {
             this.Close();
         }
+
+        private void movieLoader_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -18,7 +18,7 @@
                     <Grid.OpacityMask>
                         <VisualBrush Visual="{Binding ElementName=mask}"/>
                     </Grid.OpacityMask>
-                    <MediaElement x:Name="movieLoader"/>
+                    <MediaElement x:Name="movieLoader" PreviewMouseDown="movieLoader_PreviewMouseDown"/>
                 </Grid>
             </Grid>
         </Border>
