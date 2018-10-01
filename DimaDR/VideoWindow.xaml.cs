@@ -27,7 +27,7 @@ namespace DimaDR
         public VideoWindow(string path)
         {
             InitializeComponent();
-            ME_Player.Source = new Uri(path);
+            movieLoader.Source = new Uri(path);
         }
 
         private void MediaElement_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)

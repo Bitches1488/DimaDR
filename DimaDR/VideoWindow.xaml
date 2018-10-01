@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DimaDR"
         mc:Ignorable="d"
-        Title="VideoWindow" Height="180" Width="320" ResizeMode="NoResize" WindowStyle="None" WindowStartupLocation="CenterOwner">
+        AllowsTransparency="True"
+        Background="Transparent"
+        Title="VideoWindow" Height="180" Width="320" ResizeMode="NoResize" WindowStyle="None" WindowStartupLocation="CenterScreen">
+   
     <Grid>
-        <MediaElement x:Name="ME_Player" MouseLeftButtonDown="MediaElement_MouseLeftButtonDown" MediaEnded="ME_Player_MediaEnded" Volume="1" ></MediaElement>
+        <Border x:Name="border" BorderThickness="1" BorderBrush="#FF000000" CornerRadius="180" Padding="1"
+        HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid>
+                <Border Name="mask" Background="White" CornerRadius="{Binding ElementName=border, Path=CornerRadius}"/>
+                <Grid>
+                    <Grid.OpacityMask>
+                        <VisualBrush Visual="{Binding ElementName=mask}"/>
+                    </Grid.OpacityMask>
+                    <MediaElement x:Name="movieLoader"/>
+                </Grid>
+            </Grid>
+        </Border>
     </Grid>
 </Window>

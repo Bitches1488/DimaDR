@@ -24,5 +24,11 @@ namespace DimaDR
         {
             InitializeComponent();
         }
+
+        private void test_Click(object sender, RoutedEventArgs e)
+        {
+            VideoWindow videoWindow = new VideoWindow(@"C:\Users\student\source\repos\DimaDR\3.mp4");
+            videoWindow.ShowDialog();
+        }
     }
 }

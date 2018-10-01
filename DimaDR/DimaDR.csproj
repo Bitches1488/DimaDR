@@ -102,6 +102,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\3.mp4" />
+    <None Include="Resources\2.mp4" />
+    <None Include="Resources\1.mp4" />
     <Content Include="Resources\a0d0c5e67b5e6f23b17e4457a361b787.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
