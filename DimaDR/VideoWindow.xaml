@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="VideoWindow" Height="180" Width="320" ResizeMode="NoResize" WindowStyle="None" WindowStartupLocation="CenterOwner">
     <Grid>
-        <MediaElement x:Name="ME_Player" MouseLeftButtonDown="MediaElement_MouseLeftButtonDown" MediaEnded="ME_Player_MediaEnded" ></MediaElement>
+        <MediaElement x:Name="ME_Player" MouseLeftButtonDown="MediaElement_MouseLeftButtonDown" MediaEnded="ME_Player_MediaEnded" Volume="1" ></MediaElement>
     </Grid>
 </Window>
